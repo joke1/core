@@ -189,7 +189,8 @@ class CumulativeFilter extends AbstractProductFilter implements IsotopeFilterMod
 
         /** @var Template|object $objTemplate */
         $objTemplate = new Template($this->navigationTpl);
-
+        
+        $objTemplate->attribute = $attribute;
         $objTemplate->level = 'level_2';
         $objTemplate->items = $arrItems;
 
